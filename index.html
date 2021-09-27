@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- map link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">
+        <h1>IP Address Tracker</h1>
+      </div>
+      <div class="search-bar">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Search for any IP address or domain"
+        />
+        <button class="search-btn">></button>
+      </div>
+    </div>
+    <div class="display-detail">
+      <div id="ip-address">
+        <h6 class="ip-title">IP ADDRESS</h6>
+        <h3 class="ip-info"></h3>
+      </div>
+      <div id="location">
+        <h6 class="location-title">LOCATION</h6>
+        <h3 class="location-info"></h3>
+      </div>
+      <div id="timeline">
+        <h6 class="timelime-title">TIMELINE</h6>
+        <h3 class="timeline-info"></h3>
+      </div>
+      <div id="isp">
+        <h6 class="isp-title">ISP</h6>
+        <h3 class="isp-info"></h3>
+      </div>
+    </div>
+    <div id="mapid"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
