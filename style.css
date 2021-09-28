@@ -55,7 +55,7 @@ body {
 }
 
 .display-detail {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   display: flex;
   width: 70%;
@@ -80,6 +80,9 @@ body {
   color: black;
 }
 
+#temp-icon {
+  background-color: rgb(212, 212, 212);
+}
 #mapid {
   z-index: 1;
   height: 60vh;
@@ -93,8 +96,9 @@ body {
   .display-detail {
     flex-direction: column;
     text-align: center;
+    transform: translate(-50%, -45%);
   }
   .display-detail * {
-    padding: 5px 0;
+    padding: 1px 0;
   }
 }
