@@ -15,7 +15,7 @@ searchButton.addEventListener("click", function () {
 // /****** Generate Info *******/
 const displayInfo = function (value) {
   const apiKey =
-    "https://geo.ipify.org/api/v1?apiKey=at_xkvL0GYwwZs9go5tf0J1hPp7Jo8ta&ipAddress=";
+    "https://geo.ipify.org/api/v1?apiKey={accessToken}";
   const key = value;
   let lat, lng;
   fetch(apiKey + key)
@@ -51,7 +51,7 @@ let displayMap = function (a, b) {
       tileSize: 512,
       zoomOffset: -1,
       accessToken:
-        "pk.eyJ1IjoidG91bG91OTExIiwiYSI6ImNrdTJlcWk4bDF4b2cyb3RoY3RjdjhjdWcifQ.2uq49ClizrGXWvbpMxOT_A",
+        "accessToken",
     }
   ).addTo(mymap);
 };
@@ -59,7 +59,7 @@ let displayMap = function (a, b) {
 /***********Weather Infomation  ******/
 const showTemp = function (city) {
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1a34f479dc610643c75c7d8df51b8ce7`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={accessToken}`
   )
     .then((res) => {
       return res.json();
